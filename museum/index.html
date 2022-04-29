@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/svg/logo.svg" type="image/x-icon">
+    <title>Museum</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-wrapper wrapper">
+            <div class="logo">
+                <a class="logo-text">louvre</a>
+            </div>
+            <button class="burger">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-panel">
+                <ul class="header-nav">
+                    <li class="nav-link"><a href="#visiting" >Visiting</a></li>
+                    <li class="nav-link"><a href="#explore" >Explore</a></li>
+                    <li class="nav-link"><a href="#video" >Video</a></li>
+                    <li class="nav-link"><a href="#gallery" >Gallery</a></li>
+                    <li class="nav-link"><a href="#tickets" >Tickets</a></li>
+                    <li class="nav-link"><a href="#contacts" >Contacts</a></li>
+                </ul>
+                <div class="nav-images">
+                    <div class="nav-img"></div>
+                    <div class="nav-img"></div>
+                    <div class="nav-img"></div>
+                    <!-- <img src="./assets/img/headerImage1.jpg" alt="" class="nav-img">
+                    <img src="./assets/img/headerImage2.jpg" alt="" class="nav-img">
+                    <img src="./assets/img/headerImage3.jpg" alt="" class="nav-img"> -->
+                </div>
+                <nav class="socials">
+                    <ul class="socials">
+                        <li class="social-link"><a href="youtube.com"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="social-icon" d="M10.03 15.38V8.62L15.97 12L10.03 15.38ZM23.23 6.5C23.1026 6.01772 22.8508 5.57733 22.4998 5.22285C22.1488 4.86838 21.711 4.61222 21.23 4.48C19.46 4 12.35 4 12.35 4C12.35 4 5.25 4 3.48 4.48C2.99901 4.61222 2.56115 4.86838 2.21018 5.22285C1.85921 5.57733 1.60743 6.01772 1.48 6.5C1 8.28 1 12 1 12C1 12 1 15.72 1.47 17.5C1.5983 17.9835 1.85159 18.4247 2.20441 18.7793C2.55723 19.1338 2.99717 19.3893 3.48 19.52C5.25 20 12.36 20 12.36 20C12.36 20 19.46 20 21.23 19.52C21.711 19.3878 22.1488 19.1316 22.4998 18.7771C22.8508 18.4227 23.1026 17.9823 23.23 17.5C23.71 15.72 23.71 12 23.71 12C23.71 12 23.71 8.28 23.24 6.5H23.23Z" fill="white"/>
+                            </svg>
+                        </a>
+                        </li>
+                        <li class="social-link"><a href="instagram.com"><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="social-icon" d="M12.02 0C13.82 0 14.2 0.0199999 15.12 0.0599999C16.18 0.11 16.91 0.28 17.54 0.53C18.2 0.78 18.76 1.13 19.31 1.68C19.87 2.23 20.21 2.79 20.47 3.45C20.72 4.08 20.88 4.81 20.93 5.88C20.98 6.83 20.99 7.2 20.99 9.2V10.8C20.99 12.8 20.98 13.17 20.93 14.12C20.9143 14.9468 20.7588 15.7651 20.47 16.54C20.21 17.2 19.87 17.76 19.32 18.31C18.76 18.87 18.2 19.21 17.54 19.47C16.91 19.72 16.18 19.88 15.12 19.93C14.17 19.98 13.79 19.99 11.79 19.99H10.2C8.20003 19.99 7.83003 19.98 6.87003 19.93C6.04321 19.9141 5.22502 19.7586 4.45003 19.47C3.78364 19.2195 3.17968 18.8271 2.68003 18.32C2.16784 17.8186 1.77186 17.211 1.52003 16.54C1.23165 15.765 1.07613 14.9468 1.06003 14.12C1.01101 13.0874 0.991 12.0537 1.00003 11.02V8.97C1.00003 7.17 1.02003 6.79 1.06003 5.87C1.11003 4.81 1.28003 4.08 1.52003 3.45C1.78003 2.79 2.12003 2.23 2.68003 1.68C3.17521 1.16743 3.78047 0.774176 4.45003 0.53C5.22448 0.238206 6.04266 0.079305 6.87003 0.0599999C7.79003 0.0199999 8.17003 0 9.97003 0H12.02ZM12.04 1.8H9.95003C8.22003 1.8 7.85003 1.82 6.95003 1.86C5.98003 1.9 5.45003 2.06 5.10003 2.2C4.63003 2.38 4.30003 2.6 3.95003 2.95C3.60003 3.3 3.38003 3.63 3.20003 4.1C3.07003 4.45 2.90003 4.98 2.86003 5.96C2.82003 6.86 2.80003 7.22 2.80003 8.96V11.04C2.80003 12.78 2.82003 13.14 2.86003 14.04C2.90003 15.01 3.06003 15.54 3.20003 15.89C3.38003 16.36 3.60003 16.69 3.95003 17.04C4.30003 17.39 4.63003 17.61 5.10003 17.79C5.45003 17.93 5.98003 18.09 6.96003 18.13C7.93003 18.18 8.28003 18.19 10.44 18.19H11.55C13.72 18.19 14.06 18.18 15.04 18.13C16.01 18.09 16.54 17.93 16.89 17.79C17.36 17.61 17.69 17.39 18.04 17.04C18.39 16.69 18.61 16.36 18.79 15.89C18.93 15.54 19.09 15.01 19.13 14.04C19.18 13.06 19.19 12.72 19.19 10.55V9.45C19.19 7.28 19.18 6.93 19.13 5.95C19.09 4.98 18.93 4.45 18.79 4.1C18.6291 3.66543 18.3728 3.27246 18.04 2.95C17.7178 2.61692 17.3248 2.3606 16.89 2.2C16.2969 1.98317 15.6715 1.86822 15.04 1.86C14.0408 1.81227 13.0404 1.79226 12.04 1.8ZM11 4.86C12.3619 4.86 13.668 5.40101 14.631 6.36401C15.594 7.32701 16.135 8.63311 16.135 9.995C16.135 11.3569 15.594 12.663 14.631 13.626C13.668 14.589 12.3619 15.13 11 15.13C9.63814 15.13 8.33204 14.589 7.36904 13.626C6.40604 12.663 5.86503 11.3569 5.86503 9.995C5.86503 8.63311 6.40604 7.32701 7.36904 6.36401C8.33204 5.40101 9.63814 4.86 11 4.86ZM11 6.66C10.1155 6.66 9.26726 7.01136 8.64183 7.6368C8.0164 8.26223 7.66503 9.1105 7.66503 9.995C7.66503 10.8795 8.0164 11.7278 8.64183 12.3532C9.26726 12.9786 10.1155 13.33 11 13.33C11.8845 13.33 12.7328 12.9786 13.3582 12.3532C13.9837 11.7278 14.335 10.8795 14.335 9.995C14.335 9.1105 13.9837 8.26223 13.3582 7.6368C12.7328 7.01136 11.8845 6.66 11 6.66ZM16.33 3.46C16.6483 3.46 16.9535 3.58643 17.1786 3.81147C17.4036 4.03652 17.53 4.34174 17.53 4.66C17.53 4.97826 17.4036 5.28348 17.1786 5.50853C16.9535 5.73357 16.6483 5.86 16.33 5.86C16.0118 5.86 15.7065 5.73357 15.4815 5.50853C15.2565 5.28348 15.13 4.97826 15.13 4.66C15.13 4.34174 15.2565 4.03652 15.4815 3.81147C15.7065 3.58643 16.0118 3.46 16.33 3.46Z" fill="white"/>
+                            </svg>
+                        </a>
+                        </li>
+                        <li class="social-link"><a href="facebook.com"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="social-icon" d="M9.78 22L9.75 13.25H6V9.5H9.75V7C9.75 3.63 11.84 2 14.85 2C16.29 2 17.53 2.1 17.89 2.15V5.68H15.8C14.17 5.68 13.85 6.46 13.85 7.6V9.5H18.5L17.25 13.25H13.85V22H9.78Z" fill="white"/>
+                            </svg>
+                        </a>
+                        </li>
+                        <li class="social-link"><a href="twitter.com"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="social-icon" d="M22 5.88C21.25 6.25 20.5 6.38 19.62 6.5C20.5 6 21.12 5.25 21.37 4.25C20.5606 4.73131 19.6743 5.06959 18.75 5.25C17.9485 4.46227 16.8737 4.01446 15.75 4C13.62 4 11.75 5.88 11.75 8.13C11.75 8.5 11.75 8.75 11.88 9C10.2422 8.93823 8.63643 8.52707 7.17046 7.79408C5.70448 7.0611 4.41212 6.02321 3.38 4.75C3.00812 5.39563 2.83425 6.13634 2.88 6.88C2.89162 7.55196 3.06825 8.21077 3.39434 8.79842C3.72043 9.38608 4.18597 9.88456 4.75 10.25C4.12 10.25 3.5 10 2.87 9.75C2.87 11.75 4.25 13.38 6.12 13.75C5.75 13.88 5.37 13.88 5 13.88C4.75 13.88 4.5 13.88 4.25 13.75C4.75 15.38 6.25 16.63 8.13 16.63C6.67779 17.7963 4.8622 18.4156 3 18.38H2C3.87496 19.5591 6.03554 20.2056 8.25 20.25C15.75 20.25 19.88 14 19.88 8.62V8.12C20.7387 7.53355 21.4617 6.76969 22 5.88Z" fill="white"/>
+                            </svg>
+                        </a>
+                        </li>
+                        <li class="social-link"><a href="pinterest.com"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="social-icon" d="M12 2C9.67546 2.00824 7.42643 2.82602 5.63952 4.31277C3.85262 5.79952 2.63948 7.86234 2.20866 10.1466C1.77785 12.4309 2.15627 14.7939 3.27888 16.8293C4.40149 18.8648 6.19815 20.4456 8.35998 21.3C8.25998 20.51 8.18998 19.3 8.38998 18.43L9.55998 13.46C9.55998 13.46 9.25998 12.86 9.25998 11.98C9.25998 10.59 10.07 9.56 11.08 9.56C11.93 9.56 12.35 10.2 12.35 10.96C12.35 11.82 11.8 13.1 11.51 14.29C11.27 15.29 12.01 16.1 13 16.1C14.78 16.1 16.14 14.23 16.14 11.53C16.14 9.13 14.42 7.47 11.96 7.47C11.3756 7.44433 10.792 7.53734 10.2446 7.74342C9.69709 7.94951 9.19705 8.26438 8.77463 8.66904C8.35221 9.07371 8.01616 9.55977 7.78678 10.0979C7.55739 10.636 7.43942 11.215 7.43998 11.8C7.43998 12.66 7.76998 13.58 8.17998 14.08C8.25998 14.18 8.26998 14.27 8.23998 14.37L7.95998 15.5C7.91998 15.68 7.80998 15.73 7.62998 15.64C6.36998 15.05 5.58998 13.24 5.58998 11.76C5.58998 8.61 7.88998 5.72 12.21 5.72C15.67 5.72 18.38 8.18 18.38 11.49C18.38 14.94 16.2 17.71 13.18 17.71C12.18 17.71 11.22 17.18 10.9 16.56L10.27 18.93C9.97485 19.8577 9.55787 20.7421 9.02998 21.56C10.4038 21.9816 11.8524 22.1021 13.277 21.9133C14.7016 21.7245 16.0687 21.2309 17.2854 20.4661C18.502 19.7014 19.5395 18.6833 20.3272 17.4814C21.115 16.2795 21.6344 14.9219 21.8501 13.5011C22.0658 12.0804 21.9728 10.6298 21.5774 9.24822C21.1819 7.86664 20.4934 6.58652 19.5586 5.49506C18.6238 4.40359 17.4648 3.52642 16.1604 2.9233C14.8561 2.32017 13.437 2.00525 12 2Z" fill="white"/>
+                            </svg>
+                        </a>
+                        </li>
+                    </ul>
+                </nav>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="welcome" id="#welcome">
+            <div class="welcome-wrapper wrapper">
+                <div class="info">
+                    <h1 class="welcome-title title">Welcome <br>to the Louvre</h1>
+                    <h2 class="welcome-subtitle">From the castle to the museum</h2>
+                    <a href="./tours/tour0.html" target="_blank" class="welcome-button">Discover the Louvre</a>
+                </div>
+                <img src="./assets/img/welcomeBg.jpg" alt="Mona Lisa" class="welcome-img">
+                <div class="slider-pagination">
+                    <div class="output">
+                        <span class="is">01</span>
+                        <span class="from">05</span>
+                    </div>
+                    <div class="pagination">
+                        <button class="square"></button>
+                        <button class="square"></button>
+                        <button class="square"></button>
+                        <button class="square"></button>
+                        <button class="square"></button>
+                    </div>
+                    <div class="arrows">
+                        <img class="arrow arrow-left" src="./assets/svg/arrow-left.svg" alt="left arrow">
+                        <img class="arrow arrow-right" src="./assets/svg/arrow-right.svg" alt="right arrow">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="visiting" id="visiting">
+            <div class="visiting-wrapper wrapper">
+                <h2 class="visiting-title title underline-title">Virtual tour</h2>
+                <div class="visiting-cards">
+                    <a href="./tours/tour1.html" target="_blank" class="visiting-card">
+                        <img src="./assets/img/tour1.jpg" alt="Royal palace" class="card-img">
+                        <h3 class="card-title">Royal palace</h3>
+                        <p class="card-description">360° Virtual Tour</p>
+                        <p class="card-secondary">Google Street Panorama View</p>
+                    </a>
+                    <a href="./tours/tour2.html" target="_blank" class="visiting-card">
+                        <img src="./assets/img/tour2.jpg" alt="Denon Wing" class="card-img">
+                        <h3 class="card-title">Denon Wing</h3>
+                        <p class="card-description">360° Virtual Tour</p>
+                        <p class="card-secondary">Google Street Panorama View</p>
+                    </a>
+                    <a href="./tours/tour3.html" target="_blank" class="visiting-card">
+                        <img src="./assets/img/tour3.jpg" alt="Colonnade Perrault" class="card-img">
+                        <h3 class="card-title">Colonnade Perrault</h3>
+                        <p class="card-description">360° Virtual Tour</p>
+                        <p class="card-secondary">Google Street Panorama View</p>
+                    </a>
+                    <a href="./tours/tour4.html" target="_blank" class="visiting-card">
+                        <img src="./assets/img/tour4.jpg" alt="Greek hall" class="card-img">
+                        <h3 class="card-title">Greek hall</h3>
+                        <p class="card-description">360° Virtual Tour</p>
+                        <p class="card-secondary">Google Street Panorama View</p>
+                    </a>
+                    <a href="./tours/tour5.html" target="_blank" class="visiting-card">
+                        <img src="./assets/img/tour5.jpg" alt="Mona Lisa" class="card-img">
+                        <h3 class="card-title">Mona Lisa</h3>
+                        <p class="card-description">360° Virtual Tour</p>
+                        <p class="card-secondary">Google Street Panorama View</p>
+                    </a>
+                    <a href="./tours/tour6.html" target="_blank" class="visiting-card">
+                        <img src="./assets/img/tour6.jpg" alt="Night Palace" class="card-img">
+                        <h3 class="card-title">Night Palace</h3>
+                        <p class="card-description">360° Virtual Tour</p>
+                        <p class="card-secondary">Google Street Panorama View</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="explore" id="explore">
+            <div class="explore-wrapper wrapper">
+                <div class="explore-description">
+                    <h2 class="explore-title title underline-title">Picture explore</h2>
+                    <p class="explore-subtitle">Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.</p>
+                    <p class="explore-subtitle">It was cleaned in 1984 to remove a <span class="subtitle-main">"yellow veil"</span> of dust that had gathered since the previous restoration in the 19th century.</p>
+                    <p class="explore-subtitle">The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.</p>
+                </div>
+                <div class="explore-slider">
+                    <div class="explore-img">
+                        <img src="./assets/svg/divider.svg" alt="divider" class="divider">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="video" id="video">
+            <div class="video-wrapper wrapper">
+                <div class="video-text">
+                    <h2 class="video-title title">Video journey</h2>
+                    <p class="video-description">Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
+                </div>
+                <div class="video-block">
+                    <div class="active-video">
+                        <div class="video-main">
+                            <div class="play-block">
+                                <img class="play-button" src="./assets/svg/main-play.svg" alt="play">
+                            </div>
+                        </div>
+                        <div class="controllers">
+                            <button class="controller play-controller"></button>
+                            <input type="range" value="54" min="0" max="100" step="1" class="controller time-controller" name="time">
+                            <button class="controller volume-button"></button>
+                            <input type="range" value="45" min="0" max="100" step="1" class="controller volume-controller" name="volume">
+                            <button class="controller fullscreen-controller"></button>
+                        </div>
+                    </div>
+                    <div class="video-slider">
+                        <div class="slider-container">
+                          <div class="slider-video">
+                            <div class="slider-video-card">
+                              <!-- <img class="video-card-img"src="//img.youtube.com/vi/aWmJ5DgyWPI/mqdefault.jpg" alt="" srcset=""> -->
+                              <iframe class="card-video" src="https://www.youtube.com/embed/aWmJ5DgyWPI"></iframe>
+                            </div>
+                            <div class="slider-video-card">
+                              <!-- <img class="video-card-img"src="//img.youtube.com/vi/dqT-UlYlg1s/mqdefault.jpg" alt="" srcset=""> -->
+                              <iframe class="card-video" src="https://www.youtube.com/embed/Vi5D6FKhRmo"></iframe>
+                            </div>
+                            <div class="slider-video-card">
+                              <!-- <img class="video-card-img"src="//img.youtube.com/vi/ln3mZ2AQVt0/mqdefault.jpg" alt="" srcset=""> -->
+                              <iframe class="card-video" src="https://www.youtube.com/embed/NOhDysLnTvY"></iframe>
+                            </div>
+                            <div class="slider-video-card">
+                                <!-- <img class="video-card-img"src="//img.youtube.com/vi/ln3mZ2AQVt0/mqdefault.jpg" alt="" srcset=""> -->
+                                <iframe class="card-video" src="https://www.youtube.com/embed/2OR0OCr6uRE"></iframe>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="switchers">
+                          <img src="./assets/svg/stroke-left.svg" alt="left">
+                          <div class="circle circle-active"></div>
+                          <div class="circle"></div>
+                          <div class="circle"></div>
+                          <div class="circle"></div>
+                          <div class="circle"></div>
+                          <img src="./assets/svg/stroke-right.svg" alt="right">
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery" id="gallery">
+            <div class="gallery-wrapper wrapper">
+                <h2 class="gallery-title title">Art gallery</h2>
+                <div class="picture-container">
+                    <div class="picture-inner-container">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="tickets" id="tickets">
+            <div class="tickets-wrapper wrapper">
+                <h2 class="tickets-title title underline-title">Buy tickets</h2>
+                <div class="tickets-main">
+                    <div class="tickets-img-container"></div>
+                    <div class="tickets-choose">
+                        <div class="tickets-type">
+                            <p class="tickets-subtitle">Ticket Type</p>
+                            <input class="custom-radio" type="radio" name="ticket" id="permanent">
+                            <label for="permanent">Permanent exhibition</label>
+                            <input class="custom-radio" type="radio" name="ticket" id="temporary">
+                            <label for="temporary">Temporary exhibition</label>
+                            <input class="custom-radio" type="radio" name="ticket" id="combined">
+                            <label for="combined">Combined Admission</label>
+                        </div>
+                        <div class="amount">
+                            <p class="tickets-subtitle">Amount</p>
+                            <p class="counter-title" >Basic 18+</p>
+                            <div class="counter basic">
+                                <button class="amount-counter basic-minus">-</button>
+                                <input class="amount-counter basic-amount" type="number" name="1" value="0" max="20" min="0">
+                                <button class="amount-counter basic-plus">+</button>
+                            </div>
+                            <p class="counter-title" >Senior 65+</p>
+                            <div class="counter senior">
+                                <button class="amount-counter senior-minus">-</button>
+                                <input class="amount-counter senior-amount" type="number" name="1" value="0" max="20" min="0">
+                                <button class="amount-counter senior-plus">+</button>
+                            </div>
+                            <p class="total">Total €220</p>
+                            <button class="buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="parallax"></div>
+        <section class="contacts" id="contacts">
+            <div class="contacts-wrapper wrapper">
+                <h2 class="contacts-title title underline-title">Contacts</h2>
+                <div class="contacts-main">
+                    <div class="contacts-info">
+                        <p class="contacts-subtitle">Palais Royal <br>Musee du Louvre</p>
+                        <p class="contacts-text">address: 75001 Paris, France</p>
+                        <p class="contacts-text"><a href="tel:+33(0)140205050"> phone: +33(0) 1 40 20 50 50</a></p>
+                        <p class="contacts-text"><a href="mailto:info@louvre.fr">mail: info@louvre.fr</a></p>
+                    </div>
+                    <div class="map">
+                        <img src="./assets/img/map.png" alt="map" class="map-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-wrapper wrapper">
+            <div class="footer-up">
+                <div class="footer-left">
+                    <div class="logo">
+                        <a class="logo-text">louvre</a>
+                    </div>
+                    <nav>
+                        <ul class="footer-nav">
+                            <li class="nav-link"><a href="#visiting" class="nav-link">Visiting</a></li>
+                            <li class="nav-link"><a href="#gallery" class="nav-link">Gallery</a></li>
+                            <li class="nav-link"><a href="#explore" class="nav-link">Explore</a></li>
+                            <li class="nav-link"><a href="#tickets" class="nav-link">Tickets</a></li>
+                            <li class="nav-link"><a href="#video" class="nav-link">Video</a></li>
+                            <li class="nav-link"><a href="#contacts" class="nav-link">Contacts</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <nav class="socials">
+                    <ul class="socials">
+                        <li class="social-link"><a href="youtube.com"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="social-icon" d="M10.03 15.38V8.62L15.97 12L10.03 15.38ZM23.23 6.5C23.1026 6.01772 22.8508 5.57733 22.4998 5.22285C22.1488 4.86838 21.711 4.61222 21.23 4.48C19.46 4 12.35 4 12.35 4C12.35 4 5.25 4 3.48 4.48C2.99901 4.61222 2.56115 4.86838 2.21018 5.22285C1.85921 5.57733 1.60743 6.01772 1.48 6.5C1 8.28 1 12 1 12C1 12 1 15.72 1.47 17.5C1.5983 17.9835 1.85159 18.4247 2.20441 18.7793C2.55723 19.1338 2.99717 19.3893 3.48 19.52C5.25 20 12.36 20 12.36 20C12.36 20 19.46 20 21.23 19.52C21.711 19.3878 22.1488 19.1316 22.4998 18.7771C22.8508 18.4227 23.1026 17.9823 23.23 17.5C23.71 15.72 23.71 12 23.71 12C23.71 12 23.71 8.28 23.24 6.5H23.23Z" fill="white"/>
+                            </svg>
+                        </a>
+                        </li>
+                        <li class="social-link"><a href="instagram.com"><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="social-icon" d="M12.02 0C13.82 0 14.2 0.0199999 15.12 0.0599999C16.18 0.11 16.91 0.28 17.54 0.53C18.2 0.78 18.76 1.13 19.31 1.68C19.87 2.23 20.21 2.79 20.47 3.45C20.72 4.08 20.88 4.81 20.93 5.88C20.98 6.83 20.99 7.2 20.99 9.2V10.8C20.99 12.8 20.98 13.17 20.93 14.12C20.9143 14.9468 20.7588 15.7651 20.47 16.54C20.21 17.2 19.87 17.76 19.32 18.31C18.76 18.87 18.2 19.21 17.54 19.47C16.91 19.72 16.18 19.88 15.12 19.93C14.17 19.98 13.79 19.99 11.79 19.99H10.2C8.20003 19.99 7.83003 19.98 6.87003 19.93C6.04321 19.9141 5.22502 19.7586 4.45003 19.47C3.78364 19.2195 3.17968 18.8271 2.68003 18.32C2.16784 17.8186 1.77186 17.211 1.52003 16.54C1.23165 15.765 1.07613 14.9468 1.06003 14.12C1.01101 13.0874 0.991 12.0537 1.00003 11.02V8.97C1.00003 7.17 1.02003 6.79 1.06003 5.87C1.11003 4.81 1.28003 4.08 1.52003 3.45C1.78003 2.79 2.12003 2.23 2.68003 1.68C3.17521 1.16743 3.78047 0.774176 4.45003 0.53C5.22448 0.238206 6.04266 0.079305 6.87003 0.0599999C7.79003 0.0199999 8.17003 0 9.97003 0H12.02ZM12.04 1.8H9.95003C8.22003 1.8 7.85003 1.82 6.95003 1.86C5.98003 1.9 5.45003 2.06 5.10003 2.2C4.63003 2.38 4.30003 2.6 3.95003 2.95C3.60003 3.3 3.38003 3.63 3.20003 4.1C3.07003 4.45 2.90003 4.98 2.86003 5.96C2.82003 6.86 2.80003 7.22 2.80003 8.96V11.04C2.80003 12.78 2.82003 13.14 2.86003 14.04C2.90003 15.01 3.06003 15.54 3.20003 15.89C3.38003 16.36 3.60003 16.69 3.95003 17.04C4.30003 17.39 4.63003 17.61 5.10003 17.79C5.45003 17.93 5.98003 18.09 6.96003 18.13C7.93003 18.18 8.28003 18.19 10.44 18.19H11.55C13.72 18.19 14.06 18.18 15.04 18.13C16.01 18.09 16.54 17.93 16.89 17.79C17.36 17.61 17.69 17.39 18.04 17.04C18.39 16.69 18.61 16.36 18.79 15.89C18.93 15.54 19.09 15.01 19.13 14.04C19.18 13.06 19.19 12.72 19.19 10.55V9.45C19.19 7.28 19.18 6.93 19.13 5.95C19.09 4.98 18.93 4.45 18.79 4.1C18.6291 3.66543 18.3728 3.27246 18.04 2.95C17.7178 2.61692 17.3248 2.3606 16.89 2.2C16.2969 1.98317 15.6715 1.86822 15.04 1.86C14.0408 1.81227 13.0404 1.79226 12.04 1.8ZM11 4.86C12.3619 4.86 13.668 5.40101 14.631 6.36401C15.594 7.32701 16.135 8.63311 16.135 9.995C16.135 11.3569 15.594 12.663 14.631 13.626C13.668 14.589 12.3619 15.13 11 15.13C9.63814 15.13 8.33204 14.589 7.36904 13.626C6.40604 12.663 5.86503 11.3569 5.86503 9.995C5.86503 8.63311 6.40604 7.32701 7.36904 6.36401C8.33204 5.40101 9.63814 4.86 11 4.86ZM11 6.66C10.1155 6.66 9.26726 7.01136 8.64183 7.6368C8.0164 8.26223 7.66503 9.1105 7.66503 9.995C7.66503 10.8795 8.0164 11.7278 8.64183 12.3532C9.26726 12.9786 10.1155 13.33 11 13.33C11.8845 13.33 12.7328 12.9786 13.3582 12.3532C13.9837 11.7278 14.335 10.8795 14.335 9.995C14.335 9.1105 13.9837 8.26223 13.3582 7.6368C12.7328 7.01136 11.8845 6.66 11 6.66ZM16.33 3.46C16.6483 3.46 16.9535 3.58643 17.1786 3.81147C17.4036 4.03652 17.53 4.34174 17.53 4.66C17.53 4.97826 17.4036 5.28348 17.1786 5.50853C16.9535 5.73357 16.6483 5.86 16.33 5.86C16.0118 5.86 15.7065 5.73357 15.4815 5.50853C15.2565 5.28348 15.13 4.97826 15.13 4.66C15.13 4.34174 15.2565 4.03652 15.4815 3.81147C15.7065 3.58643 16.0118 3.46 16.33 3.46Z" fill="white"/>
+                            </svg>
+                        </a>
+                        </li>
+                        <li class="social-link"><a href="facebook.com"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="social-icon" d="M9.78 22L9.75 13.25H6V9.5H9.75V7C9.75 3.63 11.84 2 14.85 2C16.29 2 17.53 2.1 17.89 2.15V5.68H15.8C14.17 5.68 13.85 6.46 13.85 7.6V9.5H18.5L17.25 13.25H13.85V22H9.78Z" fill="white"/>
+                            </svg>
+                        </a>
+                        </li>
+                        <li class="social-link"><a href="twitter.com"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="social-icon" d="M22 5.88C21.25 6.25 20.5 6.38 19.62 6.5C20.5 6 21.12 5.25 21.37 4.25C20.5606 4.73131 19.6743 5.06959 18.75 5.25C17.9485 4.46227 16.8737 4.01446 15.75 4C13.62 4 11.75 5.88 11.75 8.13C11.75 8.5 11.75 8.75 11.88 9C10.2422 8.93823 8.63643 8.52707 7.17046 7.79408C5.70448 7.0611 4.41212 6.02321 3.38 4.75C3.00812 5.39563 2.83425 6.13634 2.88 6.88C2.89162 7.55196 3.06825 8.21077 3.39434 8.79842C3.72043 9.38608 4.18597 9.88456 4.75 10.25C4.12 10.25 3.5 10 2.87 9.75C2.87 11.75 4.25 13.38 6.12 13.75C5.75 13.88 5.37 13.88 5 13.88C4.75 13.88 4.5 13.88 4.25 13.75C4.75 15.38 6.25 16.63 8.13 16.63C6.67779 17.7963 4.8622 18.4156 3 18.38H2C3.87496 19.5591 6.03554 20.2056 8.25 20.25C15.75 20.25 19.88 14 19.88 8.62V8.12C20.7387 7.53355 21.4617 6.76969 22 5.88Z" fill="white"/>
+                            </svg>
+                        </a>
+                        </li>
+                        <li class="social-link"><a href="pinterest.com"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="social-icon" d="M12 2C9.67546 2.00824 7.42643 2.82602 5.63952 4.31277C3.85262 5.79952 2.63948 7.86234 2.20866 10.1466C1.77785 12.4309 2.15627 14.7939 3.27888 16.8293C4.40149 18.8648 6.19815 20.4456 8.35998 21.3C8.25998 20.51 8.18998 19.3 8.38998 18.43L9.55998 13.46C9.55998 13.46 9.25998 12.86 9.25998 11.98C9.25998 10.59 10.07 9.56 11.08 9.56C11.93 9.56 12.35 10.2 12.35 10.96C12.35 11.82 11.8 13.1 11.51 14.29C11.27 15.29 12.01 16.1 13 16.1C14.78 16.1 16.14 14.23 16.14 11.53C16.14 9.13 14.42 7.47 11.96 7.47C11.3756 7.44433 10.792 7.53734 10.2446 7.74342C9.69709 7.94951 9.19705 8.26438 8.77463 8.66904C8.35221 9.07371 8.01616 9.55977 7.78678 10.0979C7.55739 10.636 7.43942 11.215 7.43998 11.8C7.43998 12.66 7.76998 13.58 8.17998 14.08C8.25998 14.18 8.26998 14.27 8.23998 14.37L7.95998 15.5C7.91998 15.68 7.80998 15.73 7.62998 15.64C6.36998 15.05 5.58998 13.24 5.58998 11.76C5.58998 8.61 7.88998 5.72 12.21 5.72C15.67 5.72 18.38 8.18 18.38 11.49C18.38 14.94 16.2 17.71 13.18 17.71C12.18 17.71 11.22 17.18 10.9 16.56L10.27 18.93C9.97485 19.8577 9.55787 20.7421 9.02998 21.56C10.4038 21.9816 11.8524 22.1021 13.277 21.9133C14.7016 21.7245 16.0687 21.2309 17.2854 20.4661C18.502 19.7014 19.5395 18.6833 20.3272 17.4814C21.115 16.2795 21.6344 14.9219 21.8501 13.5011C22.0658 12.0804 21.9728 10.6298 21.5774 9.24822C21.1819 7.86664 20.4934 6.58652 19.5586 5.49506C18.6238 4.40359 17.4648 3.52642 16.1604 2.9233C14.8561 2.32017 13.437 2.00525 12 2Z" fill="white"/>
+                            </svg>
+                        </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-down">
+                <p class="year">© 2021</p>
+                <a href="https://rs.school/js/" class="school">The Rolling Scopes School</a>
+                <a href="https://github.com/jnkdi" class="git">jnkdi</a>
+            </div>
+        </div>
+    </footer>
+<script src="./js/video.js"></script>
+<script src="./js/galery.js"></script>
+<script src="./js/tickets.js"></script>
+<script src="./js/header.js"></script>
+</body>
+</html>
